@@ -1,0 +1,26 @@
+footer{
+    display: flex;
+    background-color: $color1 ;
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+    justify-content:space-around;
+    border-top: 1px solid black;
+
+    .foterdiv{
+        display: flex;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;   
+        font-size: 35px;  
+        }
+    .redes{ 
+           display: flex;
+        
+        ul{
+            transform: rotate(45deg);
+           a{
+             margin: 20px;            
+            }
+          }
+    }
+}

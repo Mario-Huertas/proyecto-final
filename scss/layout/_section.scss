@@ -1,0 +1,62 @@
+
+section{
+    background-color: $color2;
+    display: grid;
+    font-size: 20px;
+
+    .antes-carrusel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            
+            .letrero1{                
+                justify-content: center;
+               span{
+                color: black;
+                text-decoration:underline;
+               }
+               width: 300px;
+               background-color: $color1;
+               color: beige;
+               padding: 5px;
+               margin: 5px;
+             }
+
+            .letrero2{
+            @extend .letrero1;
+             }
+
+            .letrero3{
+               justify-content: center;
+               width: 300px;
+               background-color: $color1;
+               color: beige;
+               padding: 5px;
+               margin: 5px;
+               justify-content: center;
+             
+            }
+
+    }
+
+    #carouselExampleCaptions{
+       margin: 10px;
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            
+            .letrero1{
+            background-color: black;
+            color: beige;
+            padding: 5px;
+            margin: 5px;
+    
+             }
+            .letrero2{
+            @extend .letrero1;
+             }
+    }
+}
+}

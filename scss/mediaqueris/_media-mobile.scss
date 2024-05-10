@@ -1,0 +1,152 @@
+// header
+@media screen and (max-width: 425px) {
+    header{
+        img{
+            display: none;
+           }
+        nav{
+            font-size: 10px;
+            ul{
+              li{
+                 margin: 1px;
+                  a{                      
+                    font-size: 15px;                     
+                   }
+                }
+              }
+           }
+          } 
+  }
+// seccion carrucel inicio
+  @media screen and (max-width: 425px) {
+    section{
+      display: flex;
+      flex-wrap: wrap;
+      .antes-carrusel{              
+        background-color: rgb(10, 10, 10);
+        .letrero1{
+          display: none;
+        }
+         .letrero3{
+          display: contents;
+         }              
+        }                        
+    }          
+}
+// footer
+@media screen and (max-width: 425px) {
+     footer{
+        .foterdiv{ 
+           background-color: aqua;
+           display: none;
+              p{
+               display: none;
+              }
+        }
+      }
+    }
+
+ //recetas
+ @media screen and (max-width: 425px){
+  #contenedor-r{
+
+     display: flex;
+     flex-wrap: wrap;
+
+     .receta-1{
+      background-color: black;
+      img{
+        background-color: black;
+      }
+     }
+
+     .receta-2{
+      font-size: 55%;
+     }
+     .receta-4{
+      font-size: 55%;
+     }
+     .receta-6{
+      font-size: 55%;
+     }
+     .receta-8{
+      font-size: 55%;
+     }
+
+    }
+ }
+// seccion nosotros
+ @media screen and (max-width: 425px){
+  #contenedor-n{
+      display: flex;
+      flex-wrap: wrap;
+  
+      .box1 {
+        flex-direction: column;        
+        font-size: small;
+      }
+      .box2 {
+         width: 90%;
+         flex-wrap: wrap;
+          flex-direction: column;
+
+           form{
+               p{
+                font-size: small;
+                }
+                label{
+                  font-size: small;
+                }
+                input{
+                  width: 60%;
+                }
+               textarea{
+                 width: 80%;
+                }
+          }
+       }
+     .box3 {
+        flex-direction: column;
+        display: none;
+  }
+      .box4{
+         flex-direction: column;
+         display: none;
+  }
+  }
+}
+
+// procesos
+@media screen and (max-width: 425px){
+  #nosotros-fondo{
+    background-color: black;
+    
+    .cont1{
+    width: 60%;
+    }
+    .cont2{
+    width: 60%;
+    }
+
+    .contenedor-interno{
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+
+    .cont3{
+      font-size: smaller;
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    .cont4{
+      font-size: smaller;
+      }
+    }
+}
+  }
+
+
+
+
+

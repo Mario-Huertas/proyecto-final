@@ -14,13 +14,16 @@ footer{
         font-size: 35px;  
         }
     .redes{ 
-           display: flex;
-        
-        ul{
-            transform: rotate(45deg);
-           a{
-             margin: 20px;            
+           display: flex; 
+            ul{
+              display: flex;
+             li{
+              list-style: none;
+              transform: rotate(45deg);
+              a{
+                 margin: 20px;            
+              }
             }
-          }
+         }
     }
 }

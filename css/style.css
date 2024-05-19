@@ -55,7 +55,7 @@ header nav ul li:hover a {
   section .antes-carrusel {
     background-color: rgb(10, 10, 10);
   }
-  section .antes-carrusel .letrero1, section .antes-carrusel #carouselExampleCaptions .container .letrero2, section #carouselExampleCaptions .container .antes-carrusel .letrero2, section .antes-carrusel .letrero2 {
+  section .antes-carrusel .letrero1, main section .antes-carrusel #carouselExampleCaptions .container .letrero2, main section #carouselExampleCaptions .container .antes-carrusel .letrero2, main section .antes-carrusel .letrero2 {
     display: none;
   }
   section .antes-carrusel .letrero3 {
@@ -174,23 +174,46 @@ footer .redes {
   display: flex;
 }
 footer .redes ul {
+  display: flex;
+}
+footer .redes ul li {
+  list-style: none;
   transform: rotate(45deg);
 }
-footer .redes ul a {
+footer .redes ul li a {
   margin: 20px;
 }
 
-section {
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main section {
   background-color: rgb(107, 112, 99);
   display: grid;
   font-size: 20px;
 }
-section .antes-carrusel {
+main section h1 {
+  background-color: rgb(80, 82, 82);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+main section .antes-carrusel {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .antes-carrusel .letrero1, section .antes-carrusel #carouselExampleCaptions .container .letrero2, section #carouselExampleCaptions .container .antes-carrusel .letrero2, section .antes-carrusel .letrero2 {
+main section .antes-carrusel .letrero1, main section .antes-carrusel #carouselExampleCaptions .container .letrero2, main section #carouselExampleCaptions .container .antes-carrusel .letrero2, main section .antes-carrusel .letrero2 {
   justify-content: center;
   width: 300px;
   background-color: rgb(204, 60, 60);
@@ -198,11 +221,11 @@ section .antes-carrusel .letrero1, section .antes-carrusel #carouselExampleCapti
   padding: 5px;
   margin: 5px;
 }
-section .antes-carrusel .letrero1 span, section .antes-carrusel #carouselExampleCaptions .container .letrero2 span, section #carouselExampleCaptions .container .antes-carrusel .letrero2 span, section .antes-carrusel .letrero2 span {
+main section .antes-carrusel .letrero1 span, main section .antes-carrusel #carouselExampleCaptions .container .letrero2 span, main section #carouselExampleCaptions .container .antes-carrusel .letrero2 span, main section .antes-carrusel .letrero2 span {
   color: black;
   text-decoration: underline;
 }
-section .antes-carrusel .letrero3 {
+main section .antes-carrusel .letrero3 {
   justify-content: center;
   width: 300px;
   background-color: rgb(204, 60, 60);
@@ -211,15 +234,15 @@ section .antes-carrusel .letrero3 {
   margin: 5px;
   justify-content: center;
 }
-section #carouselExampleCaptions {
+main section #carouselExampleCaptions {
   margin: 10px;
 }
-section #carouselExampleCaptions .container {
+main section #carouselExampleCaptions .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section #carouselExampleCaptions .container .letrero1, section #carouselExampleCaptions .container .letrero2 {
+main section #carouselExampleCaptions .container .letrero1, main section #carouselExampleCaptions .container .letrero2 {
   background-color: black;
   color: beige;
   padding: 5px;
@@ -249,6 +272,11 @@ section #carouselExampleCaptions .container .letrero1, section #carouselExampleC
   padding: 2%;
   text-align: center;
 }
+#contenedor-n .box1 .h1n {
+  color: black;
+  background-color: transparent;
+  animation-name: none;
+}
 #contenedor-n .box2 {
   background-color: rgb(204, 60, 60);
   grid-column: 3/4;
@@ -266,11 +294,22 @@ section #carouselExampleCaptions .container .letrero1, section #carouselExampleC
   border-radius: 25px;
   border: 1px solid black;
 }
+#contenedor-n .box3 img {
+  width: 100%;
+  height: 95%;
+  padding-top: 2%;
+  border-radius: 25px;
+}
 #contenedor-n .box4 {
   grid-column: 2/3;
   grid-row: 2/3;
   border-radius: 25px;
   border: 1px solid black;
+}
+#contenedor-n .box4 iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
 }
 
 * {
@@ -279,11 +318,21 @@ section #carouselExampleCaptions .container .letrero1, section #carouselExampleC
 }
 
 #contenedor-r {
+  background-color: rgb(107, 112, 99);
   display: grid;
   padding: 30px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 170px);
   gap: 5px;
+}
+#contenedor-r h1 {
+  align-items: center;
+  grid-column: 1/5;
+  grid-row: 5/6;
+  background-color: transparent;
+  animation-name: none;
+  color: beige;
+  font-weight: 100;
 }
 #contenedor-r .mi-receta {
   max-width: 100%;
@@ -366,6 +415,7 @@ section #carouselExampleCaptions .container .letrero1, section #carouselExampleC
 }
 
 #grid-container {
+  background-color: rgb(107, 112, 99);
   display: grid;
   padding: 30px;
   gap: 15px;
@@ -457,6 +507,12 @@ section #carouselExampleCaptions .container .letrero1, section #carouselExampleC
   padding: 10px;
   border-radius: 15px;
   background-image: linear-gradient(to left, rgb(253, 93, 81), rgb(146, 146, 140));
+}
+#nosotros-fondo .cont1 h1 {
+  color: black;
+  font-weight: 300;
+  background-color: transparent;
+  animation-name: none;
 }
 #nosotros-fondo .cont2 {
   margin: 20px;

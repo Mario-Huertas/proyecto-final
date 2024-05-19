@@ -30,7 +30,7 @@
          .letrero3{
           display: contents;
          }              
-        }                        
+      }                        
     }          
 }
 // footer
@@ -39,9 +39,9 @@
         .foterdiv{ 
            background-color: aqua;
            display: none;
-              p{
-               display: none;
-              }
+            p{
+              display: none;
+            }
         }
       }
     }
@@ -49,7 +49,6 @@
  //recetas
  @media screen and (max-width: 425px){
   #contenedor-r{
-
      display: flex;
      flex-wrap: wrap;
 
@@ -59,7 +58,6 @@
         background-color: black;
       }
      }
-
      .receta-2{
       font-size: 55%;
      }
@@ -72,15 +70,14 @@
      .receta-8{
       font-size: 55%;
      }
-
     }
  }
+
 // seccion nosotros
  @media screen and (max-width: 425px){
   #contenedor-n{
       display: flex;
       flex-wrap: wrap;
-  
       .box1 {
         flex-direction: column;        
         font-size: small;
@@ -88,8 +85,7 @@
       .box2 {
          width: 90%;
          flex-wrap: wrap;
-          flex-direction: column;
-
+        flex-direction: column;
            form{
                p{
                 font-size: small;
@@ -110,8 +106,8 @@
         display: none;
   }
       .box4{
-         flex-direction: column;
-         display: none;
+        flex-direction: column;
+        display: none;
   }
   }
 }
@@ -120,19 +116,16 @@
 @media screen and (max-width: 425px){
   #nosotros-fondo{
     background-color: black;
-    
     .cont1{
     width: 60%;
     }
     .cont2{
     width: 60%;
     }
-
     .contenedor-interno{
       display: flex;
       flex-wrap: wrap;
       width: 50%;
-
     .cont3{
       font-size: smaller;
         h2{
@@ -143,8 +136,8 @@
       font-size: smaller;
       }
     }
-}
   }
+}
 
 
 

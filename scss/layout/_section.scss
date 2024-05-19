@@ -1,31 +1,45 @@
 
+@keyframes aparecer{
+    0%{ opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+
+main{
 section{
     background-color: $color2;
     display: grid;
     font-size: 20px;
+    h1{
+        background-color: rgb(80, 82, 82);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+
+        animation-duration: 3s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+    }
 
     .antes-carrusel{
         display: flex;
         justify-content: center;
-        align-items: center;
-            
+        align-items: center; 
             .letrero1{                
                 justify-content: center;
-               span{
+                span{
                 color: black;
                 text-decoration:underline;
                }
-               width: 300px;
-               background-color: $color1;
-               color: beige;
-               padding: 5px;
-               margin: 5px;
+                width: 300px;
+                background-color: $color1;
+                color: beige;
+                padding: 5px;
+                margin: 5px;
              }
 
             .letrero2{
             @extend .letrero1;
              }
-
             .letrero3{
                justify-content: center;
                width: 300px;
@@ -34,9 +48,7 @@ section{
                padding: 5px;
                margin: 5px;
                justify-content: center;
-             
             }
-
     }
 
     #carouselExampleCaptions{
@@ -47,16 +59,16 @@ section{
         justify-content: center;
         align-items: center;
             
-            .letrero1{
+          .letrero1{
             background-color: black;
             color: beige;
             padding: 5px;
             margin: 5px;
-    
              }
             .letrero2{
             @extend .letrero1;
              }
     }
+ }
 }
 }

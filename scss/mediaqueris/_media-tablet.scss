@@ -1,0 +1,176 @@
+@media (min-width: 426px) and (max-width: 768px){
+    header{
+        background-color: $color1;
+        img{
+            width: 20%;
+           }
+        nav{
+            font-size: 25px;
+            ul{
+              li{
+                 margin: 5px;
+                  a{                      
+                    font-size: 25px;  
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;               
+                   }
+                }
+              }
+           }
+          }
+ }
+
+ // seccion carrucel inicio
+ @media (min-width: 426px) and (max-width: 768px) {
+    section{
+      display: flex;
+      flex-wrap: wrap;
+      .antes-carrusel{              
+        background-color: rgb(10, 10, 10);
+        .letrero1{
+          display: none;
+        }
+         .letrero3{
+          display: contents;
+         }              
+      }                        
+    }          
+}
+// footer
+@media (min-width: 426px) and (max-width: 768px) {
+     footer{
+        background-color: $color1;
+        .foterdiv{ 
+            p{
+                font-size: 20px;
+            }  
+        }
+        .redes{
+            width: 90%;
+        }
+      }
+    }
+
+ //recetas
+ @media (min-width: 426px) and (max-width: 768px){
+  #contenedor-r{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+
+     .receta-1{
+        font-size: 80%
+     }
+     .receta-2{
+      font-size: 80%;
+     }
+     .receta-4{
+      font-size: 80%;
+     }
+     .receta-6{
+      font-size: 80%;
+     }
+     .receta-8{
+      font-size: 80%;
+     }
+    }
+ }
+
+// seccion nosotros
+@media (min-width: 426px) and (max-width: 768px){
+  #contenedor-n{
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .box1 {     
+        background-color:blue;
+        font-size: medium;
+        height: 110%; 
+      }
+      .box2 {
+         width: 90%;
+         flex-wrap: wrap;
+        flex-direction: column;
+           form{
+               p{
+                font-size: small;
+                }
+                label{
+                  font-size: small;
+                }
+                input{
+                  width: 60%;
+                }
+               textarea{
+                 width: 80%;
+                }
+          }
+       }
+     .box3 {
+        width: 80%;
+        height: 60%;
+        margin-top: 50px;
+  }
+      .box4{
+        width: 80%;
+        height: 60%;
+        margin-top: 50px;
+  }
+  }
+}
+
+// procesos
+@media (min-width: 426px) and (max-width: 768px){
+  #nosotros-fondo{
+    .cont1{
+    width: 80%;
+    }
+    .cont2{
+    width: 85%;
+    ul{
+        background-color: rgb(43, 61, 61);
+        color: beige;
+    }
+    }
+    .contenedor-interno{
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+    .cont3{
+      font-size: 22px;
+      color: beige;
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    .cont4{
+      font-size: 22px;
+      color: beige;
+      }
+    }
+  }
+}
+
+// galeria
+@media (min-width: 426px) and (max-width: 768px){
+    
+    main{
+    #grid-container{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;   
+
+       .grid-itema{
+            display: none;
+       } 
+       .grid-itemb{
+           display: none;
+       }
+       .grid-itemc{
+            display: none;
+       }
+       .grid-itemd{
+            display: none;
+       }
+    }  
+  }
+}

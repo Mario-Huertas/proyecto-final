@@ -41,6 +41,8 @@ header nav ul li:hover a {
     font-size: 10px;
   }
   header nav ul li {
+    justify-content: center;
+    align-self: center;
     margin: 1px;
   }
   header nav ul li a {
@@ -96,37 +98,27 @@ header nav ul li:hover a {
   }
 }
 @media screen and (max-width: 425px) {
-  #contenedor-n {
+  main #contenedor-n {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
-  #contenedor-n .box1 {
-    flex-direction: column;
+  main #contenedor-n .box1 {
     font-size: small;
   }
-  #contenedor-n .box2 {
-    width: 90%;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  #contenedor-n .box2 form p {
+  main #contenedor-n .box2 form p {
     font-size: small;
   }
-  #contenedor-n .box2 form label {
+  main #contenedor-n .box2 form label {
     font-size: small;
   }
-  #contenedor-n .box2 form input {
-    width: 60%;
-  }
-  #contenedor-n .box2 form textarea {
+  main #contenedor-n .box2 form input {
     width: 80%;
   }
-  #contenedor-n .box3 {
-    flex-direction: column;
+  main #contenedor-n .box3 {
     display: none;
   }
-  #contenedor-n .box4 {
-    flex-direction: column;
+  main #contenedor-n .box4 {
     display: none;
   }
 }
@@ -153,6 +145,196 @@ header nav ul li:hover a {
   }
   #nosotros-fondo .contenedor-interno .cont4 {
     font-size: smaller;
+  }
+}
+@media screen and (max-width: 425px) {
+  main #grid-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main #grid-container .grid-item1 iframe {
+    width: 80%;
+    padding: 15px;
+  }
+  main #grid-container .grid-itema {
+    display: none;
+  }
+  main #grid-container .grid-item2 img {
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    background-color: aqua;
+  }
+  main #grid-container .grid-itemb {
+    display: none;
+  }
+  main #grid-container .grid-item3 img {
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    background-color: aqua;
+  }
+  main #grid-container .grid-itemc {
+    display: none;
+  }
+  main #grid-container .grid-item4 iframe {
+    width: 80%;
+    margin: 20px;
+  }
+  main #grid-container .grid-itemd {
+    display: none;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  header {
+    background-color: rgb(204, 60, 60);
+  }
+  header img {
+    width: 20%;
+  }
+  header nav {
+    font-size: 25px;
+  }
+  header nav ul li {
+    margin: 5px;
+  }
+  header nav ul li a {
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section .antes-carrusel {
+    background-color: rgb(10, 10, 10);
+  }
+  section .antes-carrusel .letrero1, main section .antes-carrusel #carouselExampleCaptions .container .letrero2, main section #carouselExampleCaptions .container .antes-carrusel .letrero2, main section .antes-carrusel .letrero2 {
+    display: none;
+  }
+  section .antes-carrusel .letrero3 {
+    display: contents;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  footer {
+    background-color: rgb(204, 60, 60);
+  }
+  footer .foterdiv p {
+    font-size: 20px;
+  }
+  footer .redes {
+    width: 90%;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  #contenedor-r {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #contenedor-r .receta-1 {
+    font-size: 80%;
+  }
+  #contenedor-r .receta-2 {
+    font-size: 80%;
+  }
+  #contenedor-r .receta-4 {
+    font-size: 80%;
+  }
+  #contenedor-r .receta-6 {
+    font-size: 80%;
+  }
+  #contenedor-r .receta-8 {
+    font-size: 80%;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  #contenedor-n {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #contenedor-n .box1 {
+    background-color: blue;
+    font-size: medium;
+    height: 110%;
+  }
+  #contenedor-n .box2 {
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #contenedor-n .box2 form p {
+    font-size: small;
+  }
+  #contenedor-n .box2 form label {
+    font-size: small;
+  }
+  #contenedor-n .box2 form input {
+    width: 60%;
+  }
+  #contenedor-n .box2 form textarea {
+    width: 80%;
+  }
+  #contenedor-n .box3 {
+    width: 80%;
+    height: 60%;
+    margin-top: 50px;
+  }
+  #contenedor-n .box4 {
+    width: 80%;
+    height: 60%;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  #nosotros-fondo .cont1 {
+    width: 80%;
+  }
+  #nosotros-fondo .cont2 {
+    width: 85%;
+  }
+  #nosotros-fondo .cont2 ul {
+    background-color: rgb(43, 61, 61);
+    color: beige;
+  }
+  #nosotros-fondo .contenedor-interno {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  #nosotros-fondo .contenedor-interno .cont3 {
+    font-size: 22px;
+    color: beige;
+  }
+  #nosotros-fondo .contenedor-interno .cont3 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #nosotros-fondo .contenedor-interno .cont4 {
+    font-size: 22px;
+    color: beige;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  main #grid-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main #grid-container .grid-itema {
+    display: none;
+  }
+  main #grid-container .grid-itemb {
+    display: none;
+  }
+  main #grid-container .grid-itemc {
+    display: none;
+  }
+  main #grid-container .grid-itemd {
+    display: none;
   }
 }
 footer {
@@ -326,7 +508,7 @@ main section #carouselExampleCaptions .container .letrero1, main section #carous
   gap: 5px;
 }
 #contenedor-r h1 {
-  align-items: center;
+  justify-content: end;
   grid-column: 1/5;
   grid-row: 5/6;
   background-color: transparent;
@@ -505,20 +687,26 @@ main section #carouselExampleCaptions .container .letrero1, main section #carous
 #nosotros-fondo .cont1 {
   margin: 20px;
   padding: 10px;
+  border: solid gray 1px;
   border-radius: 15px;
   background-image: linear-gradient(to left, rgb(253, 93, 81), rgb(146, 146, 140));
 }
 #nosotros-fondo .cont1 h1 {
   color: black;
-  font-weight: 300;
+  font-weight: 200;
   background-color: transparent;
   animation-name: none;
 }
 #nosotros-fondo .cont2 {
-  margin: 20px;
+  margin: 15px;
   padding: 10px;
   border-radius: 15px;
   background-image: radial-gradient(ellipse, rgb(253, 93, 81), rgb(146, 146, 140));
+}
+#nosotros-fondo .cont2 ul {
+  margin: 30px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #nosotros-fondo .contenedor-interno {
   display: flex;
@@ -551,16 +739,14 @@ main section #carouselExampleCaptions .container .letrero1, main section #carous
 #nosotros-fondo .contenedor-interno .cont5 {
   height: 200px;
   width: 330px;
-  margin: 20px;
-  padding: 40px;
+  padding: 15px 20px 20px 50px;
   border: 1px solid black;
   border-radius: 10px;
   background-image: linear-gradient(to left, rgb(253, 93, 81), rgb(146, 146, 140));
   transform: rotate(30deg);
 }
 #nosotros-fondo .contenedor-interno .cont5 img {
-  margin-left: 10px;
-  width: 30%;
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */

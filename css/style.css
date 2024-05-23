@@ -123,27 +123,24 @@ header nav ul li:hover a {
   }
 }
 @media screen and (max-width: 425px) {
-  #nosotros-fondo {
-    background-color: black;
+  main #nosotros-fondo .cont1 {
+    width: 50%;
   }
-  #nosotros-fondo .cont1 {
-    width: 60%;
+  main #nosotros-fondo .cont2 {
+    width: 50%;
   }
-  #nosotros-fondo .cont2 {
-    width: 60%;
-  }
-  #nosotros-fondo .contenedor-interno {
+  main #nosotros-fondo .contenedor-interno {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
   }
-  #nosotros-fondo .contenedor-interno .cont3 {
+  main #nosotros-fondo .contenedor-interno .cont3 {
     font-size: smaller;
   }
-  #nosotros-fondo .contenedor-interno .cont3 h2 {
+  main #nosotros-fondo .contenedor-interno .cont3 h2 {
     font-family: Arial, Helvetica, sans-serif;
   }
-  #nosotros-fondo .contenedor-interno .cont4 {
+  main #nosotros-fondo .contenedor-interno .cont4 {
     font-size: smaller;
   }
 }
@@ -153,14 +150,20 @@ header nav ul li:hover a {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  main #grid-container .grid-item1 {
+    width: 80%;
+  }
   main #grid-container .grid-item1 iframe {
     width: 80%;
-    padding: 15px;
   }
   main #grid-container .grid-itema {
     display: none;
   }
+  main #grid-container .grid-item2 {
+    width: 80%;
+  }
   main #grid-container .grid-item2 img {
+    width: 80%;
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -169,7 +172,11 @@ header nav ul li:hover a {
   main #grid-container .grid-itemb {
     display: none;
   }
+  main #grid-container .grid-item3 {
+    width: 80%;
+  }
   main #grid-container .grid-item3 img {
+    width: 80%;
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
